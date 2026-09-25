@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json({ limit: '15mb' })); // las fotos en base64 pueden pesar varios MB
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
-const MODEL = 'meta-llama/llama-4-scout-17b-16e-instruct';
+const MODEL = 'qwen/qwen3.8-27b';
 
 if (!GROQ_API_KEY) {
   console.warn('⚠️  Falta GROQ_API_KEY en las variables de entorno. El servidor no podrá llamar a la IA.');
